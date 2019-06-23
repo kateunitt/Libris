@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/library21"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".UpdateBookActivity"
+    tools:showIn="@layout/app_bar_update_book">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@color/transparency">
+
+        <LinearLayout
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Update Book Details"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/updateIDTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateIDlblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="ID" />
+
+                    <TextView
+                        android:id="@+id/updateIDtextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.75"
+                        android:ems="10"
+                        android:enabled="false" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateTitleTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateTitleLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Title" />
+
+                    <EditText
+                        android:id="@+id/updateTitleEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.75"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="E.g. The Colour of Magic" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateTypeTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateTypeLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Type" />
+
+                    <Spinner
+                        android:id="@+id/updateTypeSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.6"
+                        android:hint="E.g. Fiction" />
+
+                    <ImageButton
+                        android:id="@+id/updateNewTypeImageButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateSeriesTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateSeriesLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Series" />
+
+                    <Spinner
+                        android:id="@+id/updateSeriesSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.6"
+                        android:hint="E.g. Discworld" />
+
+                    <ImageButton
+                        android:id="@+id/updateNewSeriesImageButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateSeriesOrdinalTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateSeriesOrdinalLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Series Ordinal" />
+
+                    <EditText
+                        android:id="@+id/updateSeriesOrdinalEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.75"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:hint="E.g. 1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateISBNTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateISBNLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="ISBN" />
+
+                    <EditText
+                        android:id="@+id/updateISBNEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.75"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="E.g. 01234567890123" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateCategoryTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateCategoryLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Category" />
+
+                    <Spinner
+                        android:id="@+id/updateCategorySpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.6"
+                        android:hint="E.g. Fantasy" />
+
+                    <ImageButton
+                        android:id="@+id/updateNewCategoryImageButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updatePublishedYearTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updatePublishedYearLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Year Published" />
+
+                    <EditText
+                        android:id="@+id/updatePublishedYearEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.75"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:hint="E.g. 1985" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updatePublisherTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updatePublisherLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Publisher" />
+
+                    <Spinner
+                        android:id="@+id/updatePublisherSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.6"
+                        android:hint="E.g. Corgi" />
+
+                    <ImageButton
+                        android:id="@+id/updateNewPublisherImageButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateEditionTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateEditionLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Edition" />
+
+                    <EditText
+                        android:id="@+id/updateEditionEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.75"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="E.g. 1st Signed" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateLocationTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateLocationLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Location" />
+
+                    <Spinner
+                        android:id="@+id/updateLocationSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.60"
+                        android:hint="E.g. Drawered Bookcase - Hall" />
+
+                    <ImageButton
+                        android:id="@+id/updateNewLocationImageButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateBindingTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateBindingLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Binding" />
+
+                    <Spinner
+                        android:id="@+id/updateBindingSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.60"
+                        android:hint="E.g. Paperback" />
+
+                    <ImageButton
+                        android:id="@+id/updateNewBindingImageButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateStatusTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateStatusLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Status" />
+
+                    <Spinner
+                        android:id="@+id/updateStatusSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.6"
+                        android:hint="E.g. I own it" />
+
+                    <ImageButton
+                        android:id="@+id/updateNewStatusImageButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateLentToTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateLentToLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Lent To" />
+
+                    <EditText
+                        android:id="@+id/updateLentToEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.75"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="E.g. Trevor Unitt" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateLentDateTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateLentDateLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Date Lent" />
+
+                    <EditText
+                        android:id="@+id/updateLentDateEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.75"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="date"
+                        android:hint="E.g. 13/06/2019" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateSoldDateTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateSoldDateLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Date Sold" />
+
+                    <EditText
+                        android:id="@+id/updateSoldDateEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.75"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="date"
+                        android:hint="E.g. 13/06/2019" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateAskingPriceTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateAskingPriceLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Asking Price" />
+
+                    <EditText
+                        android:id="@+id/updateAskingPriceEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.75"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:hint="E.g. 5.00" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateSoldForTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/updateSoldForLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Sold For" />
+
+                    <EditText
+                        android:id="@+id/updateSoldForEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.75"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:hint="E.g. 5.00" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateLibraryDueDateTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/updateLibraryDueDateLblTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.25"
+                        android:text="Library Due Date" />
+
+                    <EditText
+                        android:id="@+id/updateLibraryDueDateEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="0.75"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="E.g. 13/06/2019"
+                        android:inputType="date" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/updateButtonsTableRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <Button
+                        android:id="@+id/buttonUpdateDiscard"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="0.33"
+                        android:text="Discard" />
+
+                    <Button
+                        android:id="@+id/buttonUpdateReset"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="0.33"
+                        android:text="Reset" />
+
+                    <Button
+                        android:id="@+id/buttonUpdateSave"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="0.33"
+                        android:text="Save" />
+                </TableRow>
+            </TableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

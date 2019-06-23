@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Go to...">
+    <menu>
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_go_home"
+                android:icon="@android:drawable/ic_menu_mapmode"
+                android:title="...Home Menu" />
+        </group>
+    </menu>
+    </item>
+
+    <item android:title="Fiction Books...">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_owned_fiction"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="I Own!" />
+                <item
+                    android:id="@+id/nav_need_fiction"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="I Need!" />
+                <item
+                    android:id="@+id/nav_wishlist_fiction"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="on my Wish List" />
+                <item
+                    android:id="@+id/nav_borrowed_fiction"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="I've Borrowed" />
+                <item
+                    android:id="@+id/nav_sell_fiction"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="I Need to Sell" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Non-Fiction Books...">
+        <menu>
+            <item
+                android:id="@+id/nav_owned_nonfiction"
+                android:icon="@drawable/ic_menu_share"
+                android:title="I Own!" />
+            <item
+                android:id="@+id/nav_need_nonfiction"
+                android:icon="@drawable/ic_menu_send"
+                android:title="I Need!" />
+            <item
+                android:id="@+id/nav_wishlist_nonfiction"
+                android:icon="@drawable/ic_menu_send"
+                android:title="on my Wish List" />
+            <item
+                android:id="@+id/nav_borrowed_nonfiction"
+                android:icon="@drawable/ic_menu_send"
+                android:title="I've Borrowed" />
+            <item
+                android:id="@+id/nav_sell_nonfiction"
+                android:icon="@drawable/ic_menu_send"
+                android:title="I Need to Sell" />
+        </menu>
+    </item>
+
+    <item android:title="Library Books...">
+        <menu>
+            <item
+                android:id="@+id/nav_borrowed_from_wgu"
+                android:icon="@drawable/ic_menu_share"
+                android:title="from WGU" />
+            <item
+                android:id="@+id/nav_borrowed_from_wcbc"
+                android:icon="@drawable/ic_menu_send"
+                android:title="from WCBC" />
+            <item
+                android:id="@+id/nav_borrowed_from_cc"
+                android:icon="@drawable/ic_menu_send"
+                android:title="from Coleg Cambria" />
+        </menu>
+    </item>
+
+</menu>

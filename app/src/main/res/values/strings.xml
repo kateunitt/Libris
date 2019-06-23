@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Libris</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Libris</string>
+    <string name="nav_header_subtitle">My Book Collection</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_owned_fiction">Fiction Books I Own</string>
+    <string name="title_activity_need_fiction">Fiction Books I Need</string>
+    <string name="title_activity_wish_list_fiction">Fiction Books on my Wish List</string>
+    <string name="title_activity_borrowed_fiction">Fiction Books I have Borrowed</string>
+    <string name="title_activity_sell_fiction">Fiction Books I need to Sell</string>
+    <string name="title_activity_owned_non_fiction">Non-Fiction Books I Own</string>
+    <string name="title_activity_need_non_fiction">Non-Fiction Books I Need</string>
+    <string name="title_activity_wish_list_non_fiction">Non-Fiction Books on my Wish List</string>
+    <string name="title_activity_borrowed_non_fiction">Non-Fiction Books I have Borrowed</string>
+    <string name="title_activity_sell_non_fiction">Non-Fiction Books I need to Sell</string>
+    <string name="title_activity_borrowed_wgu">Books I have Borrowed From WGU</string>
+    <string name="title_activity_borrowed_wcbc">Books I Have Borrowed from Wrexham Library</string>
+    <string name="title_activity_borrowed_cc">Books I Have Borrowed from Coleg Cambria</string>
+    <string name="title_activity_update_book">Update Book Details</string>
+</resources>
